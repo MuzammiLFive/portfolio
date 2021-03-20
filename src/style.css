@@ -1,24 +1,99 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0%;
+  height: 100%;
 }
-
-.site-footer {
+.content {
+  display: block;
+  height: 100%;
+}
+.common {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.navbar {
+  height: 40px;
   position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+.navbar a{
+  
+}
+.intro {
+  margin-top: 40px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(185, 255, 119, 0.5), rgba(0, 217, 255, 0.5)),
+  url('https://mdn.mozillademos.org/files/7693/catfront.png');
+}
+.experience {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-footer {
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color:#26272b;
-  padding:20px 0 20px;
-  font-size:15px;
+  padding: 20px 0 20px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   color: azure;
 }
 
 /* small devices */
-@media (min-width: 800px) {
+@media (max-width: 800px) {
+  .content {
+    display: block;
+  }
 
+  .intro {
+    
+  }
+
+  .experience {
+    
+  }
+
+  .skills {
+
+  }
+
+  .projects {
+
+  }
+  
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#26272b;
+    padding: 20px 0 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+  }
 }
